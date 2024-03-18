@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+.menu li{
+    list-style:none;
+    cursor:pointer;
+    position:relative;
+}
+li{
+    list-style:none;
+    cursor:pointer; 
+}
+/* .menu li:hover::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: rgb(221, 193, 37);
+    right: 0;
+    color: rgb(221, 193, 37);
+    bottom:-5px;
+    border-radius: 3px;
+} */
+body{
+    height: 100vh;
+}
+.icon{
+    cursor: pointer;
+}
+.card{
+    /* background-color: #f0f8ff;  */
+}
+.app{
+    /* background-color: #ffffff; */
+    /* background-color: #f0ead9; */
+    /* background-color: rgb(124, 152, 243); */
+    /* background-image: url(../src/assets/back.jpg); */
+
+}
+.active{
+    /* background-color: #ebe6e6; */
+    /* border-bottom: solid 1px rgb(221, 193, 37); */
+    padding: 5px;
+    color: blue;
+}
+.nav{
+    background-color: rgb(250, 247, 244);
+    color: white;
+}
+ .navBar{
+    transition: 0.5s;
+ }
+
+
+/* tesimonials  */
+
+
+.testimonials{
+    padding-top: 10px;
+}
+.testimonials .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonials .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%; 
+}
+.testimonials .col-3:hover{
+    transform: translateY(-10px);
+}
+.testimonials .col-3 .fa-quote-left{
+    color:gold;
+    font-size: 34px;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonials .col-3 h3{
+    font-weight: 600;
+    color:#555;
+    font-size: 16px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+.col-3{
+    flex-basis:30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+.title{
+    position: relative;
+    margin:0px auto 80px;
+    text-align:center;
+    line-height: 60px;
+    color:#555;
+}
+/* .col-4 :hover{
+    transform: translateY(-5px);
+
+} */
+.title::after{
+    content:'';
+    width:80px;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    background: orange;
+    height:3px; 
+    border-radius: 5px;
+    transform: translateX(-50%);  
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.rating .fa{ 
+    color: gold;
+    
+}
+.jobcontainer{
+    /* grid-gap: 10%; */
+    /* grid-column-gap: 100px;
+    grid-row-gap: 100px; */
+}
+ 
+.searchDiv{
+    background-image: url(../src/assets/we-are-hiring-digital-collage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;  
+}
+.navvv{
+    color: #1876f2;
+    position: fixed;
+    width: 100%;
+    top: 5.3rem;
+    left: 0;
+    background-color: rgb(238, 234, 231);
+    z-index: 40;
+    border-radius: 0;
+    padding: 0 20px 0 20px;
+    box-shadow: none;
+}
+.btn-none{
+ display: none;
+}
+.s-icon{
+    display: none;
+}
+.back{
+    background-color:#1876f2;
+    color: white;
+}
+.chat{
+    background-color: #1876f2;
+    border-radius: 50%;
+    position: fixed;
+    left: 87%;
+    top:87%;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding: 5px 15px;
+    color: white;
+    display: none;
+
+}
+.block{
+    display: block;
+}
+ 
+.menu{
+    display: none; 
+}
+
+/* @media screen (min-width: 768px) {
+    
+} */
+
+.AdminNavBar{
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    padding: 4px 20px 4px 12px;
+}
+
+.AdminFooter{
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+
+}
+
+/* .ant-menu{
+    background-color: #1876f2;
+    height: 400px;
+    width: 300px;
+} */

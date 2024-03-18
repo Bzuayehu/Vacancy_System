@@ -1,0 +1,23 @@
+// import React from 'react'
+import { Badge, Image, Space, Typography } from "antd"
+import { FiBell, FiLogOut, FiMessageCircle } from 'react-icons/fi';
+import user from './images/user-gear.png'
+const NavBar = () => {
+  return (
+    <div className=" AdminNavBar flex flex-row justify-between w-full h-[80px] items-center">
+        <Image width={50} src={user}></Image>
+        <Typography.Title>Admin Dashboard</Typography.Title>
+        <Space>
+            <Badge count={5} dot>
+                <FiMessageCircle style={{fontSize:24}}/>
+            </Badge>
+            <Badge count={10}>
+                <FiBell style={{fontSize:24}}/>
+            </Badge>
+            <FiLogOut style={{fontSize:24}}/>
+        </Space>
+    </div>
+  )
+}
+
+export default NavBar
